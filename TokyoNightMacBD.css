@@ -1,0 +1,75 @@
+:root {
+	--close-button-color: #754558;
+	--maximize-button-color: #4d5b43;
+	--minimize-button-color: #614f42;
+	--button-position: row-reverse;
+	--maximize-button-hover: #acda7b;
+	--close-button-hover: #f88199;
+	--minimize-button-hover: #e7b673;
+	--transparent-bg: rgba(0, 0, 0, 0);
+	--channel-unread: rgb(214, 214, 214);
+}
+
+.withFrame-2dL45i {
+	margin: 0;
+	height: 24px;
+}
+.typeWindows-2-g3UY {
+	flex-direction: var(--button-position);
+	gap: 14px;
+	margin-left: -2px !important;
+}
+.withFrame-2dL45i .winButton-3UMjdg > svg {
+	display: none;
+}
+.withFrame-2dL45i .winButton-3UMjdg:hover {
+	background-color: var(--background-teritary);
+}
+.withFrame-2dL45i .winButton-3UMjdg {
+	pointer-events: none;
+	margin-left: -4px;
+	top: 0;
+}
+.withFrame-2dL45i .winButton-3UMjdg::after {
+	content: '';
+	padding: 7px;
+	border-radius: 54px;
+	pointer-events: fill;
+	transition-duration: 200ms;
+	transform: scale(0.9);
+}
+.withFrame-2dL45i .winButtonClose-3Q8ZH5::after {
+	background-color: var(--close-button-hover) !important;
+	margin-top: 0px;
+}
+.withFrame-2dL45i .winButtonMinMax-3RsPUg:nth-child(3)::after {
+	background-color: var(--maximize-button-hover) !important;
+	margin-top: 0px;
+}
+.withFrame-2dL45i .winButtonMinMax-3RsPUg:nth-child(4):after {
+	background-color: var(--minimize-button-hover) !important;
+	margin-top: 0px;
+}
+.typeWindows-2-g3UY > div:hover::after {
+	transform: scale(0.44);
+	background-color: var(--transparent-bg) !important;
+	border: 7px solid var(--close-button-hover);
+}
+.withFrame-2dL45i .winButtonMinMax-3RsPUg:nth-child(4):hover::after {
+	background-color: var(--transparent-bg) !important;
+	border: 7px solid var(--minimize-button-hover);
+	margin-top: 0px;
+}
+.withFrame-2dL45i .winButtonMinMax-3RsPUg:nth-child(3):hover::after {
+	background-color: var(--transparent-bg) !important;
+	background: rgba(0, 0, 0, 0);
+	border: 7px solid var(--maximize-button-hover);
+	margin-top: 0px;
+}
+.wrapper-NhbLHG.modeUnread-3Cxepe
+	.content-1gYQeQ
+	.mainContent-20q_Hp
+	.name-28HaxV {
+	color: var(--channel-unread);
+	text-shadow: 0 0 0px;
+}
